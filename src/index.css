@@ -7,6 +7,6 @@ body {
 *,
 * ::after,
 * ::before {
-  box-sizing: border-boxs;
+  box-sizing: border-box;
 }
 
