@@ -8,6 +8,7 @@ import { useSearchParams } from "react-router-dom";
 // import { lazy } from "react";
 
 import { fetchSearchMovies } from "../Services/Api.jsx";
+import MovieList from "../../components/MovieList/MovieList.jsx";
 
 const SearchMovies = Yup.object().shape({
   searchTerm: Yup.string()
@@ -69,11 +70,11 @@ const MoviesPage = () => {
           </Form>
         </Formik>
       </div>
-      {/* <div>
+      <div>
         <ul className={css.moviesList}>
           <MovieList trendingMovies={movies} />
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
